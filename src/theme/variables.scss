@@ -1,0 +1,29 @@
+$font-path: "../assets/fonts";
+$app-direction: ltr;
+
+@import "ionic.globals";
+
+$colors: (
+  primary:    #251b42,
+  secondary:  #558140,
+  danger:     #dd0d0d,
+  light:      #f4f4f4,
+  dark:       #222
+);
+
+//Top Toolbar
+$toolbar-md-background: color($colors, secondary);
+
+//Bottom Tabs
+$tabs-md-background: color($colors, secondary);
+$tabs-md-tab-color-active: color($colors, light);
+$tabs-md-tab-text-color: color($colors, dark);
+$tabs-md-tab-color: color($colors, light);
+
+$list-md-background-color:color($colors, secondary);
+$-md-text-color:color($colors, light);
+
+@import "ionic.theme.default";
+@import "ionic.ionicons";
+@import "roboto";
+@import "noto-sans";

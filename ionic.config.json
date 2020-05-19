@@ -1,0 +1,8 @@
+{
+  "name": "AppWorld",
+  "app_id": "771ba88e",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

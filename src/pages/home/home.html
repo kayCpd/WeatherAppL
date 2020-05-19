@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Weather</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="container">
+  <ion-grid *ngIf="cityWeather">
+    <ion-row>
+      <ion-col width-50 offset-25>
+        <div class="icon"><img src="http://openweathermap.org/img/w/{{icon}}.png"></div>
+
+        <div class="cond">{{mainWeather.main}}</div>
+        <div class="averagetemp">{{listWeather.main.temp}}&deg;</div>
+
+        <h2 class="countryCode">{{cityWeather.country}}</h2>
+        <h1 class="location">{{cityWeather.name}}</h1>
+        
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col width-200>
+        <ion-list>
+            <ion-item>
+                <strong>Description: </strong> {{mainWeather.description}};
+              </ion-item>
+            <ion-item>
+              <strong>Temperature Minimum: </strong> {{listWeather.main.temp_min}}&deg;
+            </ion-item>
+            <ion-item>
+                <strong>Temperature Maximum: </strong> {{listWeather.main.temp_max}}&deg;              
+              </ion-item>
+              <ion-item>
+                  <strong>WindSpeed: </strong> {{listWeather.wind.speed}};
+              </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

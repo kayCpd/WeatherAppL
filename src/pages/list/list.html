@@ -1,0 +1,27 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>List</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding class="container">
+
+      <div class="row header">
+        <div class="col">Day</div>
+        <div class="col">Description</div>
+        <div class="col">MIN-TEMP</div>
+        <div class="col">MAX-TEMP</div>
+
+      </div>
+      <div class="row" *ngFor="let day of idForcast">
+        <div class="col">{{day.day | date: 'MMM d'}}</div>
+        <div class="col">{{day.main}}</div>
+        <div class="col">{{day.tempMin}}</div>
+        <div class="col">{{day.tempMax}}</div>
+        
+      </div>
+</ion-content>
+
+

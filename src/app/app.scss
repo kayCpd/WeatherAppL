@@ -1,0 +1,31 @@
+.container{
+    background:color($colors, primary);
+    color:color($colors, light);
+    margin-top:30px;
+}
+
+.toolbar-title{
+    text-align: center;   
+}
+
+.location, .countryCode, .cond, .averagetemp, .icon, .main, .desc{
+    text-align: center;
+}
+
+.temp{
+    font-size:95px;
+    text-align: center;
+}
+.averagetemp, .desc{
+    font-size:45px;
+}
+
+.countryCode{
+    font-size:45px;
+}
+
+.icon{
+    size:140px;
+    text-align:center;
+}
+
